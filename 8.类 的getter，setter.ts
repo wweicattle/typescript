@@ -24,6 +24,8 @@ console.log(ba.name);
 
 
 // 单例模式,静态方法
+// 首先你要知道单例模式是什么，他就是父类只可以进行实例一次，当在实例时会判断是否以存在
+// 实例化的instance，只会赋值一次instance
 console.log("-------------------------");
 class Demoba {
     private static instance:Demoba;

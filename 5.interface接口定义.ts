@@ -60,11 +60,13 @@ getPersonName({
 
 // 就是一个类
 class son implements Person {
-    name = "343";
+    name = "545";
     say() {
         return "43"
     }
 }
+var sas=new son();
+console.log(sas);
 
 
 
