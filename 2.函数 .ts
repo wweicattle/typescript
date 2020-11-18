@@ -26,3 +26,9 @@ function add({ first, second }: { first: number, second: number }): number {
     return first + second;
 };
 let asa = add({ first: 1, second: 2 });
+
+
+
+const a:(str:string)=>number=(str)=>{
+    return parseInt(str,10)
+}
