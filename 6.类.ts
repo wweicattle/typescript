@@ -1,8 +1,8 @@
 class Person {
     name = "wuwei";
-    getName() {
-        return this.name;
-    }
+    // getName() {
+    //     return this.name;
+    // }
 }
 const S = new Person();
 console.log(S.name);
@@ -14,7 +14,7 @@ class Teachers extends Person {
         return "dadad"
     }
     getNames() {
-        return 33+ super.getName();
+        return 33;
     }
 }
 

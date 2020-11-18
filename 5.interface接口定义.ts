@@ -44,13 +44,16 @@ const peroson = {
 
 // 注意如果传入接口Person中没有出现过的属性，这时你只能放上面person中的有额外接口中没有的属性 ，不会有报错，
 // 如果你直接放在函数形参中就会出现 错误
-getPersonNameONw(peroson)
+getPersonNameONw(peroson);
 getPersonName({
     name: "wuwei",
-    gennder: "female",
+    age: 434,
     say() {
-        return "say"
-    }
+        return "sdjfjsnf"
+    },
+
+    getName() { return '434' }
+
 
 }, "wukai");
 
