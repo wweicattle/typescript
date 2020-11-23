@@ -27,8 +27,8 @@ class Circle extends Jiu {
         return 123;
     }
 }
-var fs = new Circle();
-console.log(fs.getArea());
+var fss = new Circle();
+console.log(fss.getArea());
 
 
 // interface的使用
@@ -37,14 +37,11 @@ interface Persons {
     name: string
 }
 interface jiuyi extends Persons {
-    name: string
 }
 interface jiuyiage extends Persons {
-    name: string;
     age: number
 }
 interface jiuyisex extends Persons {
-    name: string;
     sex: string
 }
 
@@ -54,6 +51,8 @@ const student={
     age:24,
     sex:"female"
 }
+
+// 直接把Persons给类型注解 你也可以使用user:jiuyi|jiusex------这样子
 let getUserInfo = (user: Persons) => {
     console.log(user.name);
 }

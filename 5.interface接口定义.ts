@@ -1,9 +1,14 @@
+interface per {
+    name: string,
+    age: number
+}
 interface Person {
     // readonly name: string,
     name: string;
     // 可有可没
     age?: number;
-    [propName: string]: any;
+    [propName: number]: per[];
+
     say(): string
 }
 
@@ -65,7 +70,7 @@ class son implements Person {
         return "43"
     }
 }
-var sas=new son();
+var sas = new son();
 console.log(sas);
 
 

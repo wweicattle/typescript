@@ -6,7 +6,7 @@
 class Person7 {
     private name: string = "434";
     protected names: string = "wuweisasas";
-    public sayHi() {
+     sayHi() {
         return this.name;
     }
 }
@@ -14,6 +14,7 @@ class Person7 {
 
 class Tea extends Person7 {
     //  name: string = "434sasas";
+    sf:string;
     public sayA() {
         // 自定义属性发生错误 
         let a = this.sayHi()
