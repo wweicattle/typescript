@@ -18,7 +18,7 @@ interface courderUser {
 
 }
 class Fa {
-    private filePath: string = path.resolve(__dirname, "./new.json");
+    private filePath: string = path.resolve(__dirname, "../data/new.json");
     private secret: string = "secretKey";
     private url = `http://www.dell-lee.com/typescript/demo.html?secret=${this.secret}`;
     constructor() {
@@ -64,4 +64,6 @@ class Fa {
 
 var son = new Fa();
 
-console.log(2333);
+console.log("wuwei");
+
+

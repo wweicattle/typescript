@@ -5,9 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node ./src/index.ts",
-    "build": "tsc  -w",
-    "run": "nodemon node"
+    "dev:build": "tsc  -w",
+    "dev:start": "nodemon  ./build/index.js",
+    "dev": "concurrently npm:dev:*"
+
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +21,7 @@
     "@types/cheerio": "^0.22.22",
     "@types/superagent": "^4.1.10",
     "cheerio": "^1.0.0-rc.3",
+    "concurrently": "^5.3.0",
     "nodemon": "^2.0.6",
     "superagent": "^6.1.0",
     "ts-node": "^9.0.0",

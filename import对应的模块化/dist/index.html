@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 这是利用require的引入模块，ts编译之后会有define（。。。。。。。） -->
+<script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script src="./index.js"></script>
+<body>
+    <script>
+       require(['demo'],(Page)=>{
+           new Page.default()
+       })
+    </script>
+</body>
+</html>

@@ -48,7 +48,7 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var Fa = /** @class */ (function () {
     function Fa() {
-        this.filePath = path_1.default.resolve(__dirname, "./new.json");
+        this.filePath = path_1.default.resolve(__dirname, "../data/new.json");
         this.secret = "secretKey";
         this.url = "http://www.dell-lee.com/typescript/demo.html?secret=" + this.secret;
         this.getText();
@@ -104,4 +104,4 @@ var Fa = /** @class */ (function () {
     return Fa;
 }());
 var son = new Fa();
-console.log(2333);
+console.log("wuwei");
