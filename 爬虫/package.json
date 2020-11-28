@@ -8,7 +8,6 @@
     "dev:build": "tsc  -w",
     "dev:start": "nodemon  ./build/index.js",
     "dev": "concurrently npm:dev:*"
-
   },
   "nodemonConfig": {
     "ignore": [
