@@ -17,6 +17,8 @@ interface user {
 interface courderUser {
 
 }
+
+
 class Fa {
     
     private filePath: string = path.resolve(__dirname, "../data/new.json");
