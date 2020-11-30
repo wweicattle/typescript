@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:build": "tsc  -w",
     "dev:start": "nodemon  ./build/index.js",
+<<<<<<< HEAD
     "dev": "tsc && concurrently npm:dev:*"
+=======
+    "dev": "concurrently npm:dev:*"
+>>>>>>> 6e168c31690a7d34d1f353166f5f58bb1fdf73ef
   },
   "nodemonConfig": {
     "ignore": [
