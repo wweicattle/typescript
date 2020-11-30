@@ -38,8 +38,12 @@ class Fa {
     //  constructor(name: string) {
     // this.name=name;
     // }
+<<<<<<< HEAD
 
     constructor(public name: d) {
+=======
+    constructor(public name: string) {
+>>>>>>> 58512358a479f3fae553cb4084a2f8ec5d243923
     }
 
 }
