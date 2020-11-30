@@ -1,5 +1,5 @@
 type Ts = "name";
-const ss: Ts = "name"
+const ss: Ts = "name";
 
 // 做一个总结 T之前可以是（string，number,{},）现在也可以是一个字符串的类型。
 
@@ -7,7 +7,7 @@ const ss: Ts = "name"
 // 比如传入一个name。之后对应返回出来的值就是要string。。。。。。
 interface Person {
     name: string,
-    age: number,
+    ageh: number,
     gender: string
 }
 
@@ -23,9 +23,9 @@ class Teacher {
 }
 var s = new Teacher({
     name: "wr",
-    age: 24,
+    ageh: 24,
     gender: "male"
 })
 
-let t = s.getInfo("age");
+let t = s.getInfo("ageh");
 console.log(t)

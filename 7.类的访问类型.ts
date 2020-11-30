@@ -4,7 +4,7 @@
 // protected 类内与继承的子类可以运行 
 
 class Person7 {
-    private name: string = "434";
+    private name: string;
     protected names: string = "wuweisasas";
      sayHi() {
         return this.name;
@@ -25,12 +25,13 @@ class Tea extends Person7 {
 }
 var sd = new Person7();
 console.log(sd.sayHi());
-var f = new Tea();
-f.sayA();
+var fc = new Tea();
+fc.sayA();
 
 
-
-
+interface d{
+     name:number
+}
 class Fa {
     // 简写语法
     // 相当于 public name: string
@@ -38,17 +39,18 @@ class Fa {
     // this.name=name;
     // }
 
-    constructor(public name: string) {
+    constructor(public name: d) {
     }
 
 }
 
 class Son extends Fa {
     constructor(public age: number) {
+
         // 必须在构造函数中添加super（传给父类的构造函数参数）相当与调用父类实例 (必须)
         // 还有一个使用super的时候，就是在你继承父类的子类，重写了一样的属性方法，这时你要用父类的属性方法时你就要
         // 使用super.getXX()
-        super("wuwei");
+        super({name:33});
     }
 
 }
