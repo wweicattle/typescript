@@ -37,8 +37,6 @@ function testDeco() {
         }(constructor));
     };
 }
-// https://ts.xcatliu.com/introduction/what-is-typescript.html
-// https://www.runoob.com/manual/gitbook/TypeScript/_book/doc/handbook/Writing%20Definition%20Files.html
 // 装饰器
 // function testDecoratoryi(constructor: any) {
 // constructor.prototype.getName = () => {
