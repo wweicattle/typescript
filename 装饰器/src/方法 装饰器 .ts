@@ -10,6 +10,7 @@
 function getNames(target: any,keys:string,des:PropertyDescriptor) {
     console.log(target);
     console.log(keys);
+    console.log(des);
     des.writable=false;
 }
 
