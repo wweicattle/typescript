@@ -16,6 +16,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 function getNames(target, keys, des) {
     console.log(target);
     console.log(keys);
+    console.log(des);
     des.writable = false;
 }
 var Test = /** @class */ (function () {
